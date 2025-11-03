@@ -82,6 +82,7 @@ fun prosjecnoIskustvo2(programeri: List<Programer>): Map<String, Double> {
     return rezultat
 }
 
+
 fun filtrirajFramework(programeri: List<Programer>, framework: String): List<Programer> {
     val rezultat = mutableListOf<Programer>()
     for (p in programeri) {
@@ -116,7 +117,19 @@ fun ispisiProgramere(programeri: List<Programer>) {
     }
 }
 
-
+fun percentUsingLanguage(programeri: List<Programer>, lang: String): Double {
+    var brojJezika: Double = 0.0
+    var ukupnoProgramera: Double = 0.0
+    val jezik = lang.lowercase()
+    for (p in programeri) {
+        ukupnoProgramera++
+        for (j in p.jeziciNorm) {
+            if (j==jezik) 
+            brojJezika++
+        }
+    }
+    return brojJezika/ukupnoProgramera * 100
+}
 fun main() {
     //main je stvoren uz pomoc AI alata jer je samo testiranje kreiranih klasa i metoda
         val programeri = listOf(
@@ -128,9 +141,11 @@ fun main() {
     )
 
     // 1) Prikaz svih programera
-    println("=== Svi programeri ===")
-    ispisiProgramere(programeri)
-
+    println("Odnos programera koji koriste zadani jezik u odnosu na ukupni broj programera:")
+    val rezultat: Double = percentUsingLanguage(programeri, "hTmL")
+    println(rezultat)
+  /*  ispisiProgramere(programeri)
+  
     // 2) Prebrojavanje jezika
     println("\n=== Broj programera po jeziku (groupBy) ===")
     println(brojProgrameraPoJeziku1(programeri))
@@ -146,6 +161,5 @@ fun main() {
     // 4) Filtriranje po frameworku
     val filtrirani = filtrirajFramework(programeri, "Spring Boot")
     println("\n=== Programeri koji koriste Spring Boot ===")
-    ispisiProgramere(filtrirani)
+    ispisiProgramere(filtrirani)*/
 }
-
