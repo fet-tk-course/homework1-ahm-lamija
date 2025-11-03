@@ -140,11 +140,17 @@ fun main() {
         BackendDeveloper("Dino", "K", "Mr", 6, "DE", listOf("Java", "Python"), "Spring Boot")
     )
 
+    //Provjera 
+     println("Odnos programera koji koriste zadani jezik u odnosu na ukupni broj programera:")
+     val rezultat: Double = percentUsingLanguage(programeri, "hTmL")
+     println(rezultat)
+
+        
     // 1) Prikaz svih programera
-    println("Odnos programera koji koriste zadani jezik u odnosu na ukupni broj programera:")
-    val rezultat: Double = percentUsingLanguage(programeri, "hTmL")
-    println(rezultat)
-  /*  ispisiProgramere(programeri)
+    println("=== Svi programeri ===")    
+    ispisiProgramere(programeri)
+   
+  
   
     // 2) Prebrojavanje jezika
     println("\n=== Broj programera po jeziku (groupBy) ===")
@@ -161,5 +167,5 @@ fun main() {
     // 4) Filtriranje po frameworku
     val filtrirani = filtrirajFramework(programeri, "Spring Boot")
     println("\n=== Programeri koji koriste Spring Boot ===")
-    ispisiProgramere(filtrirani)*/
+    ispisiProgramere(filtrirani)
 }
