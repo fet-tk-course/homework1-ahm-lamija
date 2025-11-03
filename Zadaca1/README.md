@@ -22,13 +22,13 @@
 
 
 
-* `brojProgrameraPoJeziku1/2` – broj programera po jeziku, implementirano koristeci odredjene metode navedene u postavci zadace (1) ili manualno (2)
+ `brojProgrameraPoJeziku1/2` – broj programera po jeziku, implementirano koristeci odredjene metode navedene u postavci zadace (1) ili manualno (2)
 
-* `prosjecnoIskustvo1/2` – prosječno iskustvo po jeziku, isto implementirano na dva nacina
+ `prosjecnoIskustvo1/2` – prosječno iskustvo po jeziku, isto implementirano na dva nacina
 
-* `filtrirajFramework` – filtrira po frameworku
+ `filtrirajFramework` – filtrira po frameworku
 
-* `ispisiProgramere` – ispis informacija
+ `ispisiProgramere` – ispis informacija
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-* Sa grupisanjem (`groupingBy`, `groupBy`)\*\*: kraći, čitljiviji kod
+* Sa grupisanjem (`groupingBy`, `groupBy`): kraći, čitljiviji kod
 
-* Bez grupisanja (manualno)\*\*: više linija, komplikovanije u smislu prolaza kroz elemente i rada nad podacima ali jednostavnije za pocetnike koji nisu upoznati sa koristenjem metoda ili koji tek pocinju uciti Kotlin
+* Bez grupisanja (manualno): više linija, komplikovanije u smislu prolaza kroz elemente i rada nad podacima ali jednostavnije za pocetnike koji nisu upoznati sa koristenjem metoda ili koji tek pocinju uciti Kotlin
 
